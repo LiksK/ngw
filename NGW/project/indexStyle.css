@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: "Montserrat", sans-serif;
+}
+body {
+    overflow: auto;
+}
+.header{
+    display: flex;
+    font-family: "Montserrat", sans-serif;
+    justify-content: space-evenly;
+    margin: 2% 10% ;
+    align-items: center;
+}
+
+.header>.headerLogo{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 2%;
+}
+
+.header>.headerList{
+
+    width: 50%;
+}
+.header>.headerList>div{
+    display: flex;
+    justify-content: space-around;
+    
+}
+.header>.headerList>div>a{
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    margin: 2%;
+    width: 18%;
+}
+.header>.headerList>div>a:hover{
+    animation: font-size-animation 1s forwards;
+}
+
+
+.Btn{
+    background-color: #2173D8;
+    border-style: none;
+    font-family: "Montserrat", sans-serif;
+    border-radius: 10px;
+    color: white;
+    
+    padding: 20px 60px;
+    font-weight: 400;
+    font-size: 16px;
+    -webkit-box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.header>.headerBtn{
+    margin: 2%;
+}
+
+.Btn:hover{
+    background-color: #1e6ccc;
+}
+
+@keyframes font-size-animation {
+    from {
+      font-size: 20px;
+    }
+    to {
+        font-size: 21px;
+    }
+}
+
+/* Container */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    color: white;
+    text-align: center;
+}
+
+    /* Intro */
+.intro {
+    width: 100%;
+    height: 80vh;
+    background : url("./src/6a59eab59fd29f6738db4c45a32d6a29\ 1\ \(1\)\ 2.png") center no-repeat ;
+    -webkit-background-size: cover;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainNGW{
+    font-size: 1100%;
+    padding: 0;
+    margin: 0;
+    animation: colorMainNGW 3s ease-in-out infinite;
+}
+/* .mainNGW:hover{
+    animation: colorMainNGW 3s ease-in-out infinite;
+} */
+
+@keyframes colorMainNGW {
+    from{
+        color: white;
+    }
+    50%{
+        color: #2173D8;
+    }
+    to{
+        color: white;
+    }
+}
+.underMainNGW{
+    font-size: 250%;
+    padding: 0;
+    margin: 0;
+    font-weight: 600;
+}
+.underMain, .underMain1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    font-size: 250%;
+}
+.twoUnderMain, .twoUnderMain1{
+    margin:0% 18%;
+    text-align: center;
+}
+.twoUnderMain>p>em, .twoUnderMain1>p>em{
+    font-style: normal;
+    color: #1e6ccc;
+}
+.underMain1{
+    background-color: #222222;
+    font-weight: 600;
+    font-size: 200%;
+}
+.twoUnderMain1{
+    color: white;
+    margin: 8% 28% 3% 28%;
+}
+.center, .center1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #222222;
+}
+
+.container1 {  display: grid;
+    /* grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr; */
+    background-color: #222222;
+    margin: 3%;
+    width: 60%;
+    height: 80vh;
+    gap: 40px 40px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "alarm light "
+      "other light ";
+  }
+  
+  .alarm { grid-area: alarm; 
+    background-image: url("./src/snapedit_1730659755494\ 2.png");
+    -webkit-background-size: cover;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight:900;
+    font-size: 50px;
+    text-transform: uppercase;
+    border-radius:20px;
+}
+  
+  .other { grid-area: other; 
+    background-image: url("./src/1b4fdd6bc731b6f270c2f003507b4574\ 2.png");
+    -webkit-background-size: cover;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight:900;
+    font-size: 100px;
+    text-transform: uppercase;
+    border-radius:20px;
+}
+  
+  .light { grid-area: light; 
+    background-image: url("./src/snapedit_1730659405965\ 2.png");
+    -webkit-background-size: cover;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight:900;
+    font-size: 100px;
+    text-transform: uppercase;
+    border-radius:20px;
+}
+.mainCenterDevices{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    background-color: #222222;
+}
+.center1{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    font-weight: 600;
+    font-size: 250%;
+}
+.email{
+    background-color: white;
+    width: 50%;
+    padding: 20px 30px;
+    font-weight: 400;
+    border: #222222 solid 1px; 
+    margin: 10px;
+    border-radius: 10px;
+    font-size: 16px;
+    -webkit-box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.2);
+}
+.emailForm{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    
+}
+.email:active{
+    border: none;
+}
+
+.teamFlex{
+    display: flex;
+    justify-content: center;
+    font-weight: 500;
+    font-size: 160%;
+
+}
+.teamBlock{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.team{
+    margin: 40px;
+}
+.teamFlex>div>img{
+    margin: 10px;
+}
+.textTeam{
+    margin: 10px;
+}
+
+footer{
+    background-color: #222222;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.socialNet{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+.socialNetElement{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.socialNetText{
+    font-weight: 500;
+    font-size: 160%;
+    margin: 15px;
+}
+a{
+    text-decoration: none;
+    color: white;
+}

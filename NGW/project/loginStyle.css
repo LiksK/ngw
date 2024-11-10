@@ -1,0 +1,84 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: "Montserrat", sans-serif;
+}
+body {
+    overflow: auto;
+}
+header{
+    display: flex;
+    font-family: "Montserrat", sans-serif;
+    justify-content: center;
+    margin: 2% 10% ;
+    align-items: center;
+}
+
+main{
+    height: 88%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mainForm, .forms{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.mainForm{
+    gap: 40px;
+    width: 20%;
+}
+.forms{
+    gap: 20px;
+}
+.forms>input{
+    width: 100%;
+    padding: 15px;
+    border: 1px black solid;
+    border-radius: 5px;
+    
+}
+.loginText{
+    margin: 10px;
+    font-weight: 900;
+    color: #2173D8;
+    font-size: 160%;
+}
+
+.Btn{
+    background-color: #2173D8;
+    border-style: none;
+    font-family: "Montserrat", sans-serif;
+    border-radius: 10px;
+    color: white;
+    
+    padding: 20px 60px;
+    font-weight: 400;
+    font-size: 16px;
+    -webkit-box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+
+.Btn:hover{
+    background-color: #1e6ccc;
+}
+
+@keyframes font-size-animation {
+    from {
+      font-size: 20px;
+    }
+    to {
+        font-size: 21px;
+    }
+}
+a{
+    text-decoration: none;
+    color: black;
+}
